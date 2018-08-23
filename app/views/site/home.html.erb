@@ -3,8 +3,6 @@
   <%= image_tag("1_3.jpeg", :class => "col col-md-4 column_width_manager d-none d-sm-block col-sm-4") %>
   <%= image_tag("1_1.jpeg", :class => "col col-md-4 column_width_manager d-none d-sm-block col-sm-4") %>
 </div>
-  
-</div>
 
 <div class="row">
   <%= image_tag("1_2.jpeg", :class => "col col-md-4 column_width_manager") %>
@@ -22,7 +20,7 @@
     <%= link_to "Shop Brands", brands_path, class: "btn btn-block btn-primary" %>
   </div>
   <div class="col col-md-2 mt-2">
-    <%= link_to "Shop Brands", brands_path, class: "btn btn-block btn-primary" %>
+    <%= link_to "Sign-up", new_user_path, class: "btn btn-block btn-warning" %>
   </div>
   <%= image_tag("1_1.jpeg", :class => "col col-md-4 column_width_manager d-none d-sm-block col-sm-4") %>
 </div>
@@ -58,7 +56,9 @@
    <div class="col col-md-6 offset-md-3">
      <div class="outerbox_signup p-5">
        <div class="innerbox_signup">
-         <h1 align="center">Sign Up Now</h1>
+         <h2 align="center">What Are You Waiting For?</h2>
+         <p align="center"> By signing up you will receive the latest updates on what products and brands you can try out before you buy. </p>
+         <%= link_to "Sign Up", new_user_path, class: "btn btn-warning btn-block" %>
        </div>
      </div>
    </div> 

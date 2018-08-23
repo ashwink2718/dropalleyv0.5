@@ -43,3 +43,12 @@ body {
 	border-top: 1.5px solid grey;
 }
 
+.margin_for_sign_up{
+		margin-top: 3%;
+	}
+
+@media screen and (max-width: 600px) {
+	.margin_for_sign_up{
+		padding-top: 30%;
+	}
+}

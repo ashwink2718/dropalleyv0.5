@@ -8,5 +8,8 @@ class SiteController < ApplicationController
     
   end
 
+  def thanks
+    
+  end
 
 end
