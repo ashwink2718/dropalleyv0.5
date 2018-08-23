@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-bottom-shadow">
-
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light navbar-bottom-shadow">
+  <div class="container-fluid">
   <%= link_to "DropAlley", root_path, class: "navbar-brand" %>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,10 +11,9 @@
       <li class="nav-item">
         <%= link_to "Shop Brands", brands_path, class: "nav-link" %>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
     </ul>
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Request A Trial</button>
+  </div>
+
   </div>
 </nav>
