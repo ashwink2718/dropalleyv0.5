@@ -12,4 +12,8 @@ class SiteController < ApplicationController
     
   end
 
+  def orderconfirm
+    
+  end
+
 end

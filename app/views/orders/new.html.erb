@@ -1,0 +1,58 @@
+<div class="row">
+  <%= image_tag("signupheader.png", :class => "col col-md-8 offset-md-2 col-sm-12 col-xs-12  d-none d-sm-block col-sm-12") %>
+</div>
+
+<%= form_for(@order, :html => {class: "form", role: "form"}) do |f| %>
+  <div class="form-row margin_for_sign_up">
+    <div class="form-group col-md-6">
+      <%= f.text_field :first_name, class: "form-control", placeholder: "First Name", autofocus: true %>
+    </div>
+    <div class="form-group col-md-6">
+      <%= f.text_field :last_name, class: "form-control", placeholder: "Last Name", autofocus: true %>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <%= f.email_field :email, class: "form-control", placeholder: "Email ID", autofocus: true %>
+    </div>
+    <div class="form-group col-md-6">
+      <%= f.text_field :apartment, class: "form-control", placeholder: "Apartment Number", autofocus: true %>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <%= f.text_field :street_name, class: "form-control", placeholder: "Street Name", autofocus: true %>
+    </div>
+    <div class="form-group col-md-3">
+      <%= f.text_field :city, class: "form-control", placeholder: "City", autofocus: true %>
+    </div>
+    <div class="form-group col-md-3">
+      <%= f.text_field :zipcode, class: "form-control", placeholder: "Zip Code", autofocus: true %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :product1, class: "form-control", placeholder: "Product Link", autofocus: true %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.text_field :product2, class: "form-control", placeholder: "Product Link", autofocus: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :product3, class: "form-control", placeholder: "Product Link", autofocus: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :product4, class: "form-control", placeholder: "Product Link", autofocus: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :product5, class: "form-control", placeholder: "Product Link", autofocus: true %>
+  </div>
+
+  <%= f.submit "Try & Buy", class: "btn btn-success btn-block btn-lg mb-5" %>
+
+<% end %>
