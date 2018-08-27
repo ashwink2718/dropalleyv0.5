@@ -31,26 +31,14 @@
     <div class="form-group col-md-3">
       <%= f.text_field :zipcode, class: "form-control", placeholder: "Zip Code", autofocus: true %>
     </div>
+    <div class="form-group col-md-3">
+      <%= f.text_field :phone_number, class: "form-control", placeholder: "+34 612301234", autofocus: true %>
+    </div>
   </div>
 
   <div class="form-group">
+    <label>Put in upto 5 product links seperated by a comma.</label>
     <%= f.text_field :product1, class: "form-control", placeholder: "Product Link", autofocus: true %>
-  </div>
-  
-  <div class="form-group">
-    <%= f.text_field :product2, class: "form-control", placeholder: "Product Link", autofocus: true %>
-  </div>
-
-  <div class="form-group">
-    <%= f.text_field :product3, class: "form-control", placeholder: "Product Link", autofocus: true %>
-  </div>
-
-  <div class="form-group">
-    <%= f.text_field :product4, class: "form-control", placeholder: "Product Link", autofocus: true %>
-  </div>
-
-  <div class="form-group">
-    <%= f.text_field :product5, class: "form-control", placeholder: "Product Link", autofocus: true %>
   </div>
 
   <%= f.submit "Try & Buy", class: "btn btn-success btn-block btn-lg mb-5" %>
